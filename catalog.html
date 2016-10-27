@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Каталог</title>
 </head>
+
 <body>
     <header class="catalog-header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" width="111" height="24" alt="Barbershop Borodinski">
-                </a>
-            </div>
+            <a class="logo" href="index.html">
+                <img src="img/logo.png" width="111" height="24" alt="Barbershop Borodinski">
+            </a>
             <nav class="catalog-navigation">
                 <ul>
                     <li>
@@ -43,107 +43,110 @@
             <li><a href="shop">Магазин</a></li>
             <li class="active">Средства для ухода</li>
         </ul>
-        <section class="catalog-filters">
+        <aside class="catalog-filters">
             <form class="manufacturers">
-                <p>Производители:</p>
-                <input type="checkbox" name="manufacturer" value="manufacturer-1" checked>Baxter of California<br>
-                <input type="checkbox" name="manufacturer" value="manufacturer-2">Mr Natty<br>
-                <input type="checkbox" name="manufacturer" value="manufacturer-3" checked>Suavecito<br>
-                <input type="checkbox" name="manufacturer" value="manufacturer-4">Malin+Goetz<br>
-                <input type="checkbox" name="manufacturer" value="manufacturer-5">Murray's<br>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <input type="checkbox" name="manufacturer" value="manufacturer-1" checked>Baxter of California
+                    <br>
+                    <input type="checkbox" name="manufacturer" value="manufacturer-2">Mr Natty
+                    <br>
+                    <input type="checkbox" name="manufacturer" value="manufacturer-3" checked>Suavecito
+                    <br>
+                    <input type="checkbox" name="manufacturer" value="manufacturer-4">Malin+Goetz
+                    <br>
+                    <input type="checkbox" name="manufacturer" value="manufacturer-5">Murray's
+                    <br>
+                </fieldset>
             </form>
             <form class="product_groups">
-                <p>Группы товаров:</p>
-                <input type="radio" name="product_group" value="product_group-1">Бритвенные принадлежности<br>
-                <input type="radio" name="product_group" value="product_group-2" checked>Средства для ухода<br>
-                <input type="radio" name="product_group" value="product_group-3">Аксессуары<br>
+                <fieldset>
+                    <legend>Группы товаров:</legend>
+                    <input type="radio" name="product_group" value="product_group-1">Бритвенные принадлежности
+                    <br>
+                    <input type="radio" name="product_group" value="product_group-2" checked>Средства для ухода
+                    <br>
+                    <input type="radio" name="product_group" value="product_group-3">Аксессуары
+                    <br>
+                </fieldset>
             </form>
-            <input class="filters-button" type="button" value="Показать">
-        </section>
-        <div class="catalog-products">
-                <div class="product-1">
-                    <img src="./img/baxter_tripset" width="220" height="165" alt="Baxter tripset">
-                    <p>Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</p>
-                    <div class="product-price">
-                        <p>2900 руб.</p>
-                    </div>
-                    <a href="cart.html">
-                        <p>Купить</p>
-                    </a>
+            <input class="filters-button" type="submit" value="Показать">
+        </aside>
+        <section class="catalog-products">
+            <article class="product">
+                <img src="./img/baxter_tripset" width="220" height="165" alt="Baxter tripset">
+                <a href="./catalog-item.html">Набор для путешествий &laquo;Baxter of&nbsp;California&raquo;</a>
+                <div class="product-price">
+                    2900 руб.
                 </div>
-                <div class="product-2">
-                    <img src="./img/baxter_conditioner" width="220" height="165" alt="Baxter conditioner">
-                    <p>Увлажняющий кондиционер &laquo;Baxter of&nbsp;California&raquo;</p>
-                    <div class="product-price">
-                        <p>750 руб.</p>
-                    </div>
-                    <a href="cart.html">
-                        <p>Купить</p>
-                    </a>
+                <button>Купить</button>
+            </article>
+            <article class="product">
+                <img src="./img/baxter_conditioner" width="220" height="165" alt="Baxter conditioner">
+                <a href="./catalog-item.html">Увлажняющий кондиционер &laquo;Baxter of&nbsp;California&raquo;</a>
+                <div class="product-price">
+                    750 руб.
                 </div>
-                <div class="product-3">
-                    <img src="./img/suavecito_hairgel" width="220" height="165" alt="Suavecito hairgel">
-                    <p>Гель для волос &laquo;Suavecito&raquo;</p>
-                    <div class="product-price">
-                        <p>290 руб.</p>
-                    </div>
-                    <a href="cart.html">
-                        <p>Купить</p>
-                    </a>
+                <button>Купить</button>
+            </article>
+            <article class="product">
+                <img src="./img/suavecito_hairgel" width="220" height="165" alt="Suavecito hairgel">
+                <a href="./catalog-item.html">Гель для волос &laquo;Suavecito&raquo;</a>
+                <div class="product-price">
+                    290 руб.
                 </div>
-                <div class="product-4">
-                    <img src="./img/amcrew_hairclay" width="220" height="165" alt="American crew hairclay">
-                    <p>Глина для укладки волос &laquo;American crew&raquo;</p>
-                    <div class="product-price">
-                        <p>500 руб.</p>
-                    </div>
-                    <a href="cart.html">
-                        <p>Купить</p>
-                    </a>
+                <button>Купить</button>
+            </article>
+            <article class="product">
+                <img src="./img/amcrew_hairclay" width="220" height="165" alt="American crew hairclay">
+                <a href="./catalog-item.html">Глина для укладки волос &laquo;American crew&raquo;</a>
+                <div class="product-price">
+                    500 руб.
                 </div>
-                <div class="product-5">
-                    <img src="./img/amcrew_hairgel" width="220" height="165" alt="American crew hairgel">
-                    <p>Гель для волос &laquo;American crew&raquo;</p>
-                    <div class="product-price">
-                        <p>300 руб.</p>
-                    </div>
-                    <a href="cart.html">
-                        <p>Купить</p>
-                    </a>
+                <button>Купить</button>
+            </article>
+            <article class="product">
+                <img src="./img/amcrew_hairgel" width="220" height="165" alt="American crew hairgel">
+                <a href="./catalog-item.html">Гель для волос &laquo;American crew&raquo;</a>
+                <div class="product-price">
+                    300 руб.
                 </div>
-                <div class="product-6">
-                    <img src="./img/baxter_shaveset" width="220" height="165" alt="Baxter shaving set">
-                    <p>Набор для бритья &laquo;Baxter of&nbsp;California&raquo;</p>
-                    <div class="product-price">
-                        <p>3900 руб.</p>
-                    </div>
-                    <a href="cart.html">
-                        <p>Купить</p>
-                    </a>
+                <button>Купить</button>
+            </article>
+            <article class="product">
+                <img src="./img/baxter_shaveset" width="220" height="165" alt="Baxter shaving set">
+                <a href="./catalog-item.html">Набор для бритья &laquo;Baxter of&nbsp;California&raquo;</a>
+                <div class="product-price">
+                    3900 руб.
                 </div>
+                <button>Купить</button>
+            </article>
+            <div class="catalog-pagination">
+                <ul>
+                    <li>
+                        <a href="page-1">1</a>
+                    </li>
+                    <li>
+                        <a href="page-2">2</a>
+                    </li>
+                    <li>
+                        <a href="page-3">3</a>
+                    </li>
+                    <li>
+                        <a href="page-4">4</a>
+                    </li>
+                </ul>
             </div>
-        <div class="catalog-pagination">
-            <a href="page-1.html">
-                <p>1</p>
-            </a>
-            <a href="page-2.html">
-                <p>2</p>
-            </a>
-            <a href="page-3.html">
-                <p>3</p>
-            </a>
-            <a href="page-4.html">
-                <p>4</p>
-            </a>
-        </div>
+        </section>
     </main>
     <footer class="catalog-footer">
         <div class="container">
             <section class="footer-contacts">
-                Барбершоп «Бородинский»<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a href="#">Как нас найти?</a><br>
-                Телефон: +7 (812) 666-02-66
+                Барбершоп «Бородинский»
+                <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                <br>
+                <a href="#">Как нас найти?</a>
+                <br> Телефон: +7 (812) 666-02-66
             </section>
             <section class="footer-social">
                 <p>Давайте дружить!</p>
@@ -158,4 +161,5 @@
         </div>
     </footer>
 </body>
+
 </html>
