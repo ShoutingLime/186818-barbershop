@@ -1,0 +1,19 @@
+body {
+    font-family: "PTSans NarrowBold";
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/* заголовка второго типа в html нет */
+
+p.set-components {
+    font-size: 24px;
+    line-height: 30px;
+}
