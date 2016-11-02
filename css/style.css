@@ -192,6 +192,7 @@ h1 {
     width: 720px;
     /* Только для оформления сетки */
     min-height: 729px;
+    font-size: 0px;
 }
 
 .product {
@@ -201,19 +202,18 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
     
     /* Только для оформления сетки */
     min-height: 286px;
 }
 
-.product:nth-child(3n) {
-    margin-right: 0px;
-}
-
-
 .catalog-pagination {
     clear: both;
     margin-left: 10px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .catalog-pagination li {
