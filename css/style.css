@@ -189,13 +189,14 @@ h1 {
 
 .catalog-products {
     float: right;
-    
+    width: 720px;
     /* Только для оформления сетки */
     min-height: 729px;
 }
 
 .product {
-    float: right;
+    display: inline-block;
+    vertical-align: top;
     width: 220px;
     margin-left: 10px;
     margin-right: 10px;
@@ -205,10 +206,10 @@ h1 {
     min-height: 286px;
 }
 
-.product:nth-child(4) {
-    clear: both;
-    margin-bottom: 60px;
+.product:nth-child(3n) {
+    margin-right: 0px;
 }
+
 
 .catalog-pagination {
     clear: both;
